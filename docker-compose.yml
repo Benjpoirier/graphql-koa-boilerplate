@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  postgres:
+    image: postgres:10.4-alpine
+    ports:
+      - '5432:5432'
+    container_name: pg-boilerplate
+
+  redis:
+    image: redis:alpine
+    ports:
+      - '6379:6379'
+    container_name: redis-boilerplate
